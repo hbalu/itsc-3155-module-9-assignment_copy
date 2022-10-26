@@ -7,5 +7,30 @@
 <p class="mb-3">Search for a movie rating below</p>
 <!-- TODO: Feature 3 -->
 
+<form method="get">
+    <label>Movie Title:</label>
+    <input  type="search" placeholder = "Ex: Matilda" name="title" id="title">
+    <button class = "btn btn-outline-primary" ype="submit">Search</button>
+</form>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Director</th>
+        <th scope="col">Rating</th>
+      </tr>
+    </thead>
+
+    <tr>
+        <td>
+            {{search_result.title}}
+        </td>
+        <td>
+            {{search_result.director}}
+        </td>
+        <td>
+            {{search_result.rating}}
+        </td>
+      </tr>
 
 {% endblock %}
