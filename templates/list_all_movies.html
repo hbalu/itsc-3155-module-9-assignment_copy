@@ -5,5 +5,26 @@
 {% block body %}
 <h1 class="mb-5">All Movies</h1>
 <p class="mb-3">See our list of movie ratings below</p>
+<link rel="stylesheet" href="/static/styles.css" />
 <!-- TODO: Feature 1 -->
+<table class="table">
+    <thead>
+        <tr class="table_header">
+            <th scope="col">Movie Name</th>
+            <th scope="col">Director</th>
+            <th scope="col">Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for movie in movies %}
+        <tr class="table_row">
+            <td class="table_cell">{{movie.title}}</td>  
+            <td>{{movie.director}}</td>
+            <td>{{movie.rating}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
 {% endblock %}
