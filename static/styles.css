@@ -1,0 +1,13 @@
+thead{
+    background-color: white;
+    
+}
+tbody{
+    background-color: lavender;
+    border-bottom: 0ch;
+    text-align: left;
+
+}
+td{
+    padding: 10px;
+}
